@@ -1,0 +1,86 @@
+$cool-color: #86BEF6;
+$second-color: #EEF0F2x;
+$cool-border: black;
+$fuente: calibri;
+
+
+ul {
+  font-size: 12px;
+  font-family: $fuente;
+  text-align: left;
+  text-indent: inherit;
+  font-weight: bold;
+
+  li {
+    padding: 15px;
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    font-weight: normal;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #444;
+    }
+
+  }
+
+}
+
+
+h1, h2 {
+ color: black;
+ font-weight: bold;
+ font-family: $fuente;
+}
+
+h1 {
+ font-size:38px;
+ text-align: left;
+}
+
+h2 {
+ font-size:28px;
+ text-align: left;
+}
+
+p {
+ font-family: $fuente;
+ font-size: 100%;
+ color: black;
+ text-align: left;
+ border: 0px;
+}
+
+.imagenes {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 90%;
+}
+
+.imagenes:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.tabla {
+  font-size: 8px;
+}
+
+.button-basic  {
+  border: 1px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $fuente;
+  background-color: $cool-color;
+}
+
+.button-links  {
+  @extend .button-basic;
+  background-color: $second-color;
+  height: 5px;
+  font-size: 12px;
+}
